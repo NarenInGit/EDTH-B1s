@@ -1,10 +1,10 @@
 """
-NewsAPI Disclaimer (Developer Plan - Hackathon Use Only)
+NewsAPI Disclaimer (Developer Plan - Prototype Use Only)
 
-- Use NewsAPI for development, testing, demos, or hackathon prototypes only.
+- This script uses NewsAPI for development, testing, or prototype purposes only.
 - Do NOT deploy publicly, monetize, or store articles permanently.
-- Do NOT include your API key in public repos.
-- After the hackathon, delete all stored articles and API keys.
+- Do NOT include your API key in public repositories.
+- API keys must remain private at all times.
 - For public or production use, upgrade to a paid NewsAPI plan:
   https://newsapi.org/pricing
 """
@@ -62,3 +62,4 @@ def update_news_database():
 
 if __name__ == "__main__":
     update_news_database()
+
