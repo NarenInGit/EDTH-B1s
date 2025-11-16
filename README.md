@@ -147,7 +147,7 @@ During the development of Threat Link, AI-powered tools were used to assist in s
 
 - **Development Team:** Neal, Naren, Paul, Kaspar
 - **Hackathon:** EDTH Hackathon 2025, Berlin  
-- **AI Tools Used:** GitHub Copilot (Codex), ChatGPT, other AI agents for code structuring, documentation, and readability  
+- **AI Tools Used:** GitHub Copilot, Codex, ChatGPT, Claude Code, and other AI agents for code structuring, documentation, and readability  
 - **Open-Source Libraries / Frameworks:**
   - Python
   - FastAPI
