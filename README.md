@@ -137,7 +137,7 @@ These are included for reference, testing, and future development purposes only.
 
 During the development of Threat Link, AI-powered tools were used to assist in structuring the code, improving readability, and enhancing maintainability. Specifically:
 
-- **Chat GPT Codex / Cloud Code:** Suggested code snippets, refactoring ideas, and best practices.  
+- **Chat GPT Codex / Claude Code:** Suggested code snippets, refactoring ideas, and best practices.  
 - **ChatGPT and other language models:** Helped with writing documentation, organizing project structure, and generating human-readable explanations.  
 
 > ⚠️ Important: All final code and implementation decisions were reviewed and written by the development team. AI tools were used solely as assistants to improve workflow efficiency and code clarity, not as a replacement for human development or decision-making.
