@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Civilian Threat Reporting Platform (EDTH 2025)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> ⚠️ Hackathon prototype – work in progress.
 
-## Available Scripts
+This project is a prototype built during the **European Defence Tech Hackathon (13–16 Nov)**.  
+The goal: enable civilians to **report threats in real time** (e.g. drones, explosions, troop movement) and turn this **crowdsourced data** into **actionable insights** for responders via an AI-powered heatmap.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 Core Idea
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Civilians submit reports with:
+  - Location (GPS)
+  - Threat type (drone, explosion, troop movement, suspicious activity)
+  - Optional description + photo
+- Backend stores the data, runs **ML clustering (DBSCAN)** and **severity scoring**
+- Frontend displays:
+  - An interactive **heatmap** of threat density
+  - Recent reports and metadata
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧱 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Frontend**
+- React + Vite
+- UI based on Figma designs
+- Geolocation (browser API)
+- Heatmap view (Leaflet / heatmap layer)
 
-### `npm run build`
+**Backend**
+- FastAPI (Python)
+- DBSCAN clustering for hotspot detection
+- (Optional) Kalman filtering for smoothing / trajectory estimation
+- REST API endpoints:
+  - `/report` – submit a new report
+  - `/heatmap` – fetch processed heatmap points
+  - `/capture` – upload captured images (from camera)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Database / Storage**
+- Supabase (PostgreSQL + Storage)
+- `reports` table for structured threat reports
+- Storage bucket for uploaded images
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚧 Project Status
 
-### `npm run eject`
+This is a **hackathon prototype**, so:
+- Expect rough edges / hardcoded values
+- Architecture is subject to change
+- Not production-ready (yet)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ▶️ How to Run (Placeholder)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Backend (FastAPI)
+1. Create and activate a virtual environment  
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
