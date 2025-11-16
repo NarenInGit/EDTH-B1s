@@ -1,0 +1,45 @@
+{
+  "name": "react-leaflet-heatmap-layer-v3",
+  "version": "3.0.3-beta-1-patch.0",
+  "description": "A custom layer for heatmaps in react-leaflet",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "lib/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenGov/react-leaflet-heatmap-layer.git"
+  },
+  "keywords": [
+    "react",
+    "leaflet",
+    "layer",
+    "map",
+    "maps",
+    "gis",
+    "geo",
+    "geojson",
+    "heatmap",
+    "heat"
+  ],
+  "author": "Jeremiah Hall <npm@jeremiahrhall.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "leaflet": "^1.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-leaflet": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "simpleheat": "^0.4.0"
+  }
+}
